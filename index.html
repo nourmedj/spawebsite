@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SageGlow Spa — Serenity & Beauty</title>
+  <link rel="stylesheet" href="styl.css" />
+</head>
+
+<body>
+
+<!-- ============================
+     HEADER
+============================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">SageGlow <span class="dot">●</span></div>
+
+    <nav class="nav" id="mainNav">
+      <a href="index.html" data-i18n="home">Home</a>
+      <a href="#about" data-i18n="about">About</a>
+      <a href="#services" data-i18n="services">Services</a>
+      <a href="#gallery" data-i18n="gallery">Gallery</a>
+      <a href="#contact" data-i18n="contact">Contact</a>
+    </nav>
+
+    <div class="controls">
+      <button id="langToggle" class="lang-switch">ع</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================
+     MOBILE NAVIGATION
+============================ -->
+
+<aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <div class="mobile-close" onclick="toggleMobileNav()">×</div>
+
+  <nav>
+    <a href="index.html" data-i18n="home">Home</a>
+    <a href="#about" data-i18n="about">About</a>
+    <a href="#services" data-i18n="services">Services</a>
+    <a href="#gallery" data-i18n="gallery">Gallery</a>
+    <a href="#contact" data-i18n="contact">Contact</a>
+  </nav>
+
+  <div class="mobile-actions">
+    <a class="btn-primary" href="#contact" data-i18n="book">Book Appointment</a>
+    <a class="whatsapp" id="waMobile">WhatsApp</a>
+  </div>
+</aside>
+
+<!-- ============================
+     HERO SECTION
+============================ -->
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      
+      <div class="hero-copy">
+        <h1 data-i18n="headline">Where Serenity Meets Beauty</h1>
+        <p data-i18n="subheadline">
+          Experience luxury, calm, and rejuvenation in a soft, artistic atmosphere crafted with feminine warmth.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn-primary" href="#contact" data-i18n="book">Book Appointment</a>
+          <a class="btn-ghost" href="#services" data-i18n="explore">Explore Services</a>
+        </div>
+
+        <div class="quick-contact">
+          <a id="waButton" class="whatsapp">Chat on WhatsApp</a>
+        </div>
+      </div>
+
+   
+    </div>
+  </section>
+<!-- ============================
+     ABOUT
+============================ -->
+<section class="about" id="about">
+  <div class="container about-inner">
+
+    <div class="about-media">
+      <img src="spaimg/Hailuo_Image_Close-up of a facial skincare _450852616541909001.png" alt="Spa interior and team" />
+    </div>
+
+    <div class="about-copy">
+      <h2 data-i18n="about_title">About SageGlow Spa</h2>
+
+      <p data-i18n="about_txt1">
+        SageGlow Spa is a sanctuary crafted for women seeking calm, balance, and gentle beauty.
+        Our philosophy blends soft aesthetics, natural wellness, and deeply relaxing treatments.
+      </p>
+
+      <p data-i18n="about_txt2">
+        Every detail—from our color palette inspired by Dry Sage, Papaya Whip, and Cornsilk  
+        to the calm textures and warm lighting—creates a feminine, artistic atmosphere.
+      </p>
+
+      <p data-i18n="about_txt3">
+        Our certified specialists bring years of experience in skincare, massage,
+        body therapy, and holistic relaxation. Every visit is personalized with care,
+        ensuring you leave feeling renewed, confident, and beautifully restored.
+      </p>
+
+      <p data-i18n="about_txt4">
+        Whether you seek deep relaxation, glowing skin, or luxurious self-care,
+        SageGlow Spa welcomes you into a world where serenity meets beauty.
+      </p>
+
+      <a href="#services" class="btn-primary" data-i18n="about_cta">Explore Our Treatments</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================
+     SERVICES
+============================ -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 data-i18n="servicesTitle">Our Signature Treatments</h2>
+    <p class="section-desc" data-i18n="servicesIntro">
+      Each treatment is designed to restore balance, enhance natural beauty, and bring peace to your day.
+    </p>
+
+    <div class="grid service-grid">
+      <article class="card">
+        <img src="spaimg/Hailuo_Image_Relaxing massage session in a _450871591510269959 (1).png" alt="Massage therapy" />
+        <h3 data-i18n="massageTitle">Massage Therapy</h3>
+        <p data-i18n="massageDesc">Release tension and relax deeply with tailored techniques.</p>
+      </article>
+
+      <article class="card">
+        <img src="spaimg/Hailuo_Image_Close-up of a facial skincare _450852616541909001.png" alt="Facial treatment" />
+        <h3 data-i18n="facialTitle">Facial & Skincare</h3>
+        <p data-i18n="facialDesc">Glow naturally with hydrating and nourishing treatments.</p>
+      </article>
+
+      <article class="card">
+        <img src="spaimg/Hailuo_Image_Elegant manicure session close_450852697156407306.png" alt="Manicure and pedicure" />
+        <h3 data-i18n="nailsTitle">Manicure & Pedicure</h3>
+        <p data-i18n="nailsDesc">Elegant nail care with a soft, luxurious touch.</p>
+      </article>
+
+      <article class="card">
+        <img src="spaimg/Hailuo_Image_Beautiful spa client with glow_450852131407716356.png" alt="Body treatment" />
+        <h3 data-i18n="bodyTitle">Body Treatments</h3>
+        <p data-i18n="bodyDesc">Detoxify, cleanse, and renew your energy.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     GALLERY
+============================ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <h2 data-i18n="galleryTitle">A Glimpse Into Tranquility</h2>
+
+    <div class="grid gallery-grid">
+      <img src="spaimg/Hailuo_Image_Modern minimalist spa interior_450872075734294533.png" alt="Spa room 1">
+      <img src="spaimg/Hailuo_Image_Modern minimalist spa interior_450872075734294536.png" alt="Spa room 2">
+      <img src="spaimg/Hailuo_Image_Modern minimalist spa interior_450872075734294535.png" alt="Spa room 3">
+      <img src="spaimg/Hailuo_Image_Relaxing massage session in a _450852508177915907.png" alt="Spa decoration">
+      <img src="spaimg/Hailuo_Image_Modern minimalist spa interior_450852806065770499.png" alt="Relaxing ambience">
+      <img src="spaimg/Hailuo_Image_Beautiful spa client with glow_450852131407716355.png" alt="Spa details">
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     TESTIMONIALS
+============================ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2 data-i18n="testTitle">What Our Clients Say</h2>
+
+    <div class="grid testimony-grid">
+      <blockquote data-i18n="test1">“Every visit feels like a reset for my mind. The environment is beautiful.”</blockquote>
+<blockquote data-i18n="test2">“Amazing staff, gentle service, and my skin has never looked better.”</blockquote>
+<blockquote data-i18n="test3">“Calming, professional, and luxurious. I always come back.”</blockquote>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     EXTENDED TESTIMONIALS
+============================ -->
+<section class="extended-testimonials">
+  <div class="container">
+    <h2 data-i18n="testimonials_title">Client Experiences</h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p data-i18n="testimonials_txt1">“Best facial ever. My skin felt renewed and glowing.”</p>
+        <h4>Sarah M.</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <p data-i18n="testimonials_txt2">“Professional staff and the massage relieved my back pain.”</p>
+        <h4>Leila B.</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <p data-i18n="testimonials_txt3">“Beautiful atmosphere and exceptional service.”</p>
+        <h4>Nour A.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     PRICING
+============================ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 data-i18n="pricing_title">Our Pricing</h2>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3 data-i18n="price_plan1">Glow Facial</h3>
+        <p class="price">$45</p>
+      </div>
+
+      <div class="price-card">
+        <h3 data-i18n="price_plan2">Relax Massage</h3>
+        <p class="price">$60</p>
+      </div>
+
+      <div class="price-card">
+        <h3 data-i18n="price_plan3">Luxury Package</h3>
+        <p class="price">$120</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     FAQ
+============================ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4 data-i18n="faq_q1">How do I book an appointment?</h4>
+        <p data-i18n="faq_a1">You can book through our website, WhatsApp, or by phone.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4 data-i18n="faq_q2">Do you accept walk-ins?</h4>
+        <p data-i18n="faq_a2">Yes, but booking in advance is recommended.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4 data-i18n="faq_q3">Can treatments be customized?</h4>
+        <p data-i18n="faq_a3">Yes — every session is tailored to your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     CONTACT / BOOKING
+============================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 data-i18n="contactTitle">Ready to Feel Renewed?</h2>
+
+    <div class="contact-wrap">
+
+      <form id="bookingForm" class="booking-form">
+        <label>
+          <span data-i18n="labelName">Name</span>
+          <input name="name" required />
+        </label>
+
+        <label>
+          <span data-i18n="labelPhone">Phone</span>
+          <input name="phone" required />
+        </label>
+
+        <label>
+          <span data-i18n="labelService">Service</span>
+          <select name="service">
+            <option value="massage" data-i18n="massageTitle">Massage Therapy</option>
+            <option value="facial" data-i18n="facialTitle">Facial & Skincare</option>
+            <option value="nails" data-i18n="nailsTitle">Manicure & Pedicure</option>
+            <option value="body" data-i18n="bodyTitle">Body Treatments</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="labelDate">Preferred Date</span>
+          <input type="date" name="date" />
+        </label>
+
+        <label>
+          <span data-i18n="labelMsg">Message</span>
+          <textarea name="message" rows="3"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary" data-i18n="book">Book Appointment</button>
+          <button type="button" id="waQuick" class="whatsapp">WhatsApp</button>
+        </div>
+      </form>
+
+   <div class="info-box">
+ <h3 data-i18n="workTitle">Working Hours</h3>
+
+  <ul>
+   <li data-i18n="mon_fri">Monday – Friday: <span class="info-time">09:00 – 18:00</span></li>
+<li data-i18n="sat">Saturday: <span class="info-time">10:00 – 15:00</span></li>
+<li data-i18n="sun">Sunday: <span class="info-time">Closed</span></li>
+
+  </ul>
+</div>
+
+<div class="info-box">
+  <h3 data-i18n="addressTitle">Address</h3>
+
+  <div class="address-line">
+    <div class="address-icon">📍</div>
+  <p data-i18n="addressText">123 Spa Street, Casablanca</p>
+
+
+  </div>
+  <div class="address-line">
+    <div class="address-icon">📞</div>
+    <p data-i18n="phoneText">+213 555 123 456</p>
+   
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ============================
+     FOOTER
+============================ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2025 SageGlow Spa — All Rights Reserved</p>
+    <small data-i18n="crafted">Crafted with calm, care, and beauty.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
